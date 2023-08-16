@@ -103,13 +103,9 @@ form > hr {
 }
 
 #story-form {
-<<<<<<< HEAD
   background-color: #f6f6ef;
   width: 900px;
   margin: 0;
-=======
-  background-color: gray;
->>>>>>> 3d579adbc9f47e1dad9de270c2ae4183ea9ecf9d
 }
 
 .login-input label {
