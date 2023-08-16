@@ -102,6 +102,10 @@ form > hr {
   border: 1px solid lightgray;
 }
 
+#story-form {
+  background-color: gray;
+}
+
 .login-input label {
   width: 70px;
 }
