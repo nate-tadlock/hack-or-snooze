@@ -102,6 +102,12 @@ form > hr {
   border: 1px solid lightgray;
 }
 
+#story-form {
+  background-color: #f6f6ef;
+  width: 900px;
+  margin: 0;
+}
+
 .login-input label {
   width: 70px;
 }

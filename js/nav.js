@@ -5,7 +5,6 @@
  */
 
 /** Show main list of all stories when click site name */
-
 function navAllStories(evt) {
   console.debug("navAllStories", evt);
   hidePageComponents();
@@ -34,3 +33,12 @@ function updateNavOnLogin() {
   $navLogOut.show();
   $navUserProfile.text(`${currentUser.username}`).show();
 }
+
+//** Reveals submit form when user clicks */
+function navSubmitClick(evt) {
+  console.debug("navSubmitClick", evt);
+  $storyForm.show();
+}
+
+$navSubmit.on("click", navSubmitClick);
+
