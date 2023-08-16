@@ -73,11 +73,19 @@ class StoryList {
    * Returns the new Story instance
    */
 
-  async addStory( /* user, newStory */) {
-    // UNIMPLEMENTED: complete this function!
+///////////////////////////////////////WORKING HERE//////////////////////////////////////////////////////////////////////////////////////////////
+  async addStory(user, newStory) {
+    const newUserStory = new Story(newStory);                                                
+    const userStory = await axios({
+      url: `${BASE_URL}/stories`,
+      method: "POST",
+      data: { user: {loginToken: user.loginToken}, newUserStory: {title, author, url} },
+    });
+    await axios.post(`${BASE_URL}/stories`, user.ownStories.push(userStory));
+    return newUserStory;
   }
 }
-
+/////////////////////////////////////////WORKING HERE////////////////////////////////////////////////////////////////////////////////////////////
 
 /******************************************************************************
  * User: a user in the system (only used to represent the current user)
