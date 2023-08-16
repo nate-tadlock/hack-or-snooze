@@ -35,6 +35,7 @@ function updateNavOnLogin() {
 }
 
 //** Reveals submit form when user clicks */
+<<<<<<< HEAD
 function navSubmitClick(evt) {
   console.debug("navSubmitClick", evt);
   $storyForm.show();
@@ -42,3 +43,10 @@ function navSubmitClick(evt) {
 
 $navSubmit.on("click", navSubmitClick);
 
+=======
+function navSubmitClick() {
+  $storyForm.show();
+}
+
+$navSubmit.on("click", navSubmitClick);
+>>>>>>> 3d579adbc9f47e1dad9de270c2ae4183ea9ecf9d
